@@ -17,12 +17,8 @@ contract Task_08 {
        return _data.length;
    }
 
-   function getDynamicByteArrayElement(bytes memory data, uint256 index)
-    public
-    pure
-    returns (bytes1)
-{
-    require(index < data.length, "Index out of bounds");
-    return data[index];
-}
+   function getDynamicByteArrayElement(bytes memory data, uint index) public pure returns (bytes1) {
+        require(index < data.length);
+        return data[index];
+    }
 }
