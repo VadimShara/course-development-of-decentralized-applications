@@ -19,7 +19,6 @@ contract Task_11 {
    }
 
    function transferOwnership(address newOwner) external onlyOwner {
-        require(newOwner != address(0), "New owner cannot be zero address");
         owner = newOwner;
     }
 }
