@@ -17,7 +17,7 @@ contract Task_08 {
        return _data.length;
    }
 
-   function getDynamicByteArrayElement(bytes memory data, uint index)
+   function getDynamicByteArrayElement(bytes memory data, uint256 index)
     public
     pure
     returns (bytes1)
